@@ -43,4 +43,5 @@ def recieve():
         boradcast(f"{alias} has joined the chat!".encode("ascii"))
         client.send("Connected to server!".encode("ascii"))
 
+        thread = threading.Thread(target=handle_client, args=(client,))
         

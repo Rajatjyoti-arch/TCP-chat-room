@@ -1,4 +1,4 @@
 import threading
 import socket
 
-host = ''
+host = '[IP_]'

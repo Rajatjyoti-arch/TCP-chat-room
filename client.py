@@ -9,7 +9,7 @@ def recieve():
         try:
             message = client.recv(1024).decode('ascii')
             if message == 'alias?':
-                client.send(alias.encode('ascii'))
+               pass
             else:
                 print(message)
         except:

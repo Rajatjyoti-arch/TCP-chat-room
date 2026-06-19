@@ -12,5 +12,7 @@ clients = []
 aliases = []
 
 def boradcast(message):
-    for 
+    for client in clients:
+        client.send(message)
+    
     

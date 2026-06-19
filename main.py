@@ -39,4 +39,11 @@ def recieve():
         aliases.append(alias)
         clients.append(client)
 
+        print(f"Alias of client is {alias}")
+        boradcast(f"{alias} has joined the chat!".encode("ascii"))
+        client.send("Connected to server!".encode("ascii"))
+
+        thread = threading.Thread(target=handle_client, args=(client,))
+        thread.start()
+
         

@@ -44,4 +44,4 @@ def recieve():
         client.send("Connected to server!".encode("ascii"))
 
         thread = threading.Thread(target=handle_client, args=(client,))
-        
+        thread.start()

@@ -31,4 +31,4 @@ def handle_client(client):
     
 def recieve():
     while True:
-        
+        client

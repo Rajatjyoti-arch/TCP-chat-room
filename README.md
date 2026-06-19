@@ -1,6 +1,7 @@
 # Python TCP Chat Room
 
-A multi-threaded TCP chat room application written in Python. This project features a 3-tier user hierarchy with role-based permissions.
+## About
+A lightweight, multi-threaded TCP chat room application written in Python. This project features a unique 3-tier user hierarchy (Admin, Elder, and Member) with role-based permissions, moderation commands (`/kick`, `/ban`), and an automated script that pushes real-time code changes directly to GitHub.
 
 ## Architecture
 

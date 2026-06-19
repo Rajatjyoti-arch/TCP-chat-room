@@ -15,4 +15,5 @@ def recieve():
         except:
             print("An error occured!")
             client.closed()
+            break
             

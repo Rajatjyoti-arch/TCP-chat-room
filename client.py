@@ -1,7 +1,7 @@
 import threading
 import socket
 
-alias = input("Enter your alias: ")
+alias = input("Choose your alias: ")
 
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 client.connect(("[IP_Address]", 55555))
@@ -11,7 +11,7 @@ def recieve():
         try:
             message = client.recv(1024).decode('ascii')
             if message == 'alias?':
-               pass
+               
             else:
                 print(message)
         except:

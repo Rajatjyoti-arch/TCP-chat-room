@@ -21,5 +21,11 @@ def handle_client(client):
             message = client.recv(1024)
             boradcast(message)
         except:
-            index = client.index
+            index = client.index(client)
+            client.remove(client)
+            client.close()
+            alias = aliases[index]
+            aliases.remove(alias)
+            boradcast(f'{alias} has left the chat'.encode('utf-8'))
+            break
     

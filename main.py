@@ -32,4 +32,8 @@ def handle_client(client):
 def recieve():
     while True:
         client, address = server.accept()
-        print(f"Connected with (str(address))")
+        print(f"Connected with {str(address)}")
+
+        
+
+        

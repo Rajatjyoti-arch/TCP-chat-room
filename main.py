@@ -21,5 +21,5 @@ def handle_client(client):
             message = client.recv(1024)
             boradcast(message)
         except:
-            index
+            index = client.index
     

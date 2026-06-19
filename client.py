@@ -14,5 +14,5 @@ def recieve():
                 print(message)
         except:
             print("An error occured!")
-            cli
+            client.closed()
             

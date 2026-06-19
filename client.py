@@ -21,7 +21,6 @@ def recieve():
             
 def write():
     while True:
-        try:
             message = f'{alias}: {input("")}'
             client.send(message.encode('ascii'))
         except:

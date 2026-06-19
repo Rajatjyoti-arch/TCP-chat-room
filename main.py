@@ -16,5 +16,7 @@ def boradcast(message):
         client.send(message)
     
 def handle_client(client):
-    whi
+    while True:
+        try:
+            message =
     

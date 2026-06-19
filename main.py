@@ -34,6 +34,6 @@ def recieve():
         client, address = server.accept()
         print(f"Connected with {str(address)}")
 
-        
+        client.send()
 
         

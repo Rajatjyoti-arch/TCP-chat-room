@@ -2,8 +2,7 @@ import threading
 import socket
 
 alias = input("Choose your alias: ")
-if alias == 'admin':
-    password = input("Enter password for admin: ")
+password = input("Enter elder password: ")
 
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 client.connect(("[IP_Address]", 55555))
@@ -17,7 +16,9 @@ def recieve():
             break
         try:
             message = client.recv(1024).decode('ascii')
-            if message == 'alias?':
+            if message == 'role?':
+                client.send('elder'.encode('ascii'))
+            elif message == 'alias?':
                 client.send(alias.encode('ascii'))
             elif message == 'pass?':
                 client.send(password.encode('ascii'))
@@ -46,13 +47,10 @@ def write():
                 break
                 
             if msg.startswith('/'):
-                if alias == 'admin':
-                    if msg.startswith('/kick '):
-                        client.send(f'KICK {msg[6:]}'.encode('ascii'))
-                    elif msg.startswith('/ban '):
-                        client.send(f'BAN {msg[5:]}'.encode('ascii'))
+                if msg.startswith('/kick '):
+                    client.send(f'KICK {msg[6:]}'.encode('ascii'))
                 else:
-                    print("Commands can only be executed by the admin!")
+                    print("Elders can only use /kick command!")
             else:
                 message = f'{alias}: {msg}'
                 client.send(message.encode('ascii'))

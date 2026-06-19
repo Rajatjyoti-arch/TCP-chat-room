@@ -25,3 +25,4 @@ def write():
         client.send(message.encode('ascii'))
 
 mesage_thread = threading.Thread(target=recieve)
+recieve_

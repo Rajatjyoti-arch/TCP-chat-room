@@ -37,5 +37,6 @@ def recieve():
         client.send('alias?'.encode('ascii'))
         alias = client.recv(1024).decode('ascii')
         aliases.append(alias)
+        clients.append(client)
 
         

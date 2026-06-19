@@ -7,4 +7,4 @@ client.connect(("[IP_Address]", 55555))
 def recieve():
     while True:
         try:
-            message = client
+            message = client.

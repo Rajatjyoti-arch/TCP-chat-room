@@ -34,6 +34,8 @@ def recieve():
         client, address = server.accept()
         print(f"Connected with {str(address)}")
 
-        client.send('alias?'.)
+        client.send('alias?'.encode('ascii'))
+        alias = client.recv(1024).decode('ascii'
+        )
 
         

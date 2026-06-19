@@ -29,4 +29,6 @@ def handle_client(client):
             boradcast(f'{alias} has left the chat'.encode('ascii'))
             break
     
-def recieve()
+def recieve():
+    while True:
+        

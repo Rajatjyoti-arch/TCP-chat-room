@@ -43,7 +43,4 @@ def recieve():
         boradcast(f"{alias} has joined the chat!".encode("ascii"))
         client.send("Connected to server!".encode("ascii"))
 
-
-        
-
         

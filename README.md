@@ -59,7 +59,3 @@ Commands can be typed directly into the chat interface by users with the appropr
 
 3. **Follow the Prompts:**
    Enter your alias and password (if running a privileged client) to join the chat!
-
-## Auto-Push Script
-
-This repository is equipped with an `auto_push.sh` script that runs in the background. It uses `inotifywait` to monitor the directory for changes in real-time. Whenever a file is modified and saved, the script automatically commits the changes with a dynamically generated, meaningful commit message (e.g., "Restructured server.py") and pushes it to GitHub.

@@ -13,4 +13,5 @@ def recieve():
             else:
                 print(message)
         except:
+            print("An error occured!")
             

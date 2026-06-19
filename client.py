@@ -23,4 +23,5 @@ def write():
     while True:
         message = f'{alias}: {input("")}'
         client.send(message.encode('ascii'))
-            break
+
+

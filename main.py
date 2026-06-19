@@ -18,5 +18,6 @@ def boradcast(message):
 def handle_client(client):
     while True:
         try:
-            message =
+            message = client.recv(1024)
+            boradcast(message)
     

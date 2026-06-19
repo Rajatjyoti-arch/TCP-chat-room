@@ -20,5 +20,5 @@ def handle_client(client):
         try:
             message = client.recv(1024)
             boradcast(message)
-        
+        except
     

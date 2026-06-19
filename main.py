@@ -12,5 +12,5 @@ clients = []
 aliases = []
 
 def boradcast(message):
-    
+    for 
     

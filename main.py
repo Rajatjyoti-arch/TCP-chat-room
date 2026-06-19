@@ -31,4 +31,5 @@ def handle_client(client):
     
 def recieve():
     while True:
-        client, address = server.accept
+        client, address = server.accept()
+        

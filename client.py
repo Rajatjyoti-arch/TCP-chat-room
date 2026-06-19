@@ -19,3 +19,4 @@ def recieve():
             client.closed()
             break
             
+def write()

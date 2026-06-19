@@ -26,6 +26,6 @@ def handle_client(client):
             client.close()
             alias = aliases[index]
             aliases.remove(alias)
-            boradcast(f'{alias} has left the chat'.encode('utf-8'))
+            boradcast(f'{alias} has left the chat'.encode('ascii'))
             break
     

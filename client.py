@@ -19,4 +19,12 @@ def recieve():
             client.closed()
             break
             
-def write()
+def write():
+    while True:
+        try:
+            message = f'{alias}: {input("")}'
+            client.send(message.encode('ascii'))
+        except:
+            print("An error occured!")
+            client.closed()
+            break

@@ -11,4 +11,5 @@ server.listen()
 clients = []
 aliases = []
 
-def 
+def boradcast(message):
+    
